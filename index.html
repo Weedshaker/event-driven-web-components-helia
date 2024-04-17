@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <title>Event driven ipfs example</title>
+</head>
+<body>
+  <h1>Example</h1>
+    <c-ipfs>
+      <v-ipfs></v-ipfs>
+    </c-ipfs>
+  </div>
+  <script rel=preload type=module>
+    /**
+     * First level controllers and organisms are loaded and defined here (loadChildComponents)
+     */
+    Promise.all([
+      import('./src/controllers/Ipfs.js').then(module => ['c-ipfs', module.default]),
+      import('./src/views/Ipfs.js').then(module => ['v-ipfs', module.default])
+    ]).then(elements => elements.forEach(element => {
+      // don't define already existing customElements
+      if (element && !customElements.get(element[0])) customElements.define(...element)
+    }))
+  </script>
+  <style></style>
+</body>
+</html>
