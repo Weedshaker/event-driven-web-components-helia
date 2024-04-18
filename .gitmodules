@@ -1,0 +1,3 @@
+[submodule "src/helia"]
+	path = src/helia
+	url = https://github.com/ipfs/helia.git
