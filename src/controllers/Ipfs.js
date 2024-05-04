@@ -4,6 +4,13 @@
  * https://helia.io/
  * expl.: https://github.com/ipfs-examples/helia-examples/blob/main/examples/helia-esbuild/src/index.js
  * 
+ * 2024.05.04 - FAILED all tests with IPFS or Helia to publish and receive data... tested with code below as well as:
+ * 1. https://sgtpooki-helia-playground.on.fleek.co/
+ * 2. https://verified-fetch.vercel.app/
+ * 3. https://peerweb.site/ (old ipfs-js)
+ * 4. https://ipfs.io/ipfs/[cid]
+ * 5. https://gateway.ipfs.io/ipfs/[cid]
+ * ===> moving on with https://github.com/Weedshaker/event-driven-web-components-webtorrent and eventually resuming here. 
  *
  * @export
  * @param {CustomElementConstructor} [ChosenHTMLElement = HTMLElement]
